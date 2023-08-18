@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/authFree');
+mongoose.connect(process.env.mongodb_atlas_url);
 
 const db=mongoose.connection;
 
